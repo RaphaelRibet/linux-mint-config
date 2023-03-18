@@ -62,18 +62,31 @@ cd ~
   cd ~
 
 ## BSPWM
-sudo apt install git gcc make xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libxcb-ewmh2 -y
-sudo apt-get install xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev -y
-git clone https://github.com/baskerville/bspwm.git
-git clone https://github.com/baskerville/sxhkd.git
+# sudo apt install git gcc make xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libxcb-ewmh2 -y
+# sudo apt-get install xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev -y
+# git clone https://github.com/baskerville/bspwm.git
+# git clone https://github.com/baskerville/sxhkd.git
 ## Make
-cd bspwm
-make
-sudo make install
-cd ..
-cd sxhkd/
-make
-sudo make install
+# cd bspwm
+# make
+# sudo make install
+#cd ..
+#cd sxhkd/
+#make
+#sudo make install
 ## Config
-sudo cp contrib/freedesktop/bspwm.desktop /usr/share/xsessions/
-sudo service lightdm restart
+#sudo cp contrib/freedesktop/bspwm.desktop /usr/share/xsessions/
+#sudo service lightdm restart
+
+## I3
+sudo apt install i3 -y
+mkdir -p ~/.config/i3
+touch ~/.config/i3/config
+
+
+
+
+
+
+
+
