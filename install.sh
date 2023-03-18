@@ -60,3 +60,20 @@ cd ~
   cp examples/chadrc.lua lua/custom/chadrc.lua
   curl https://raw.githubusercontent.com/Shadient/config-mint/main/neovim/init.lua > lua/custom/init.lua
   cd ~
+
+## BSPWM
+sudo apt install git gcc make xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libxcb-ewmh2 -y
+sudo apt-get install xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev -y
+git clone https://github.com/baskerville/bspwm.git
+git clone https://github.com/baskerville/sxhkd.git
+## Make
+cd bspwm
+make
+sudo make install
+cd ..
+cd sxhkd/
+make
+sudo make install
+## Config
+sudo cp contrib/freedesktop/bspwm.desktop /usr/share/xsessions/
+sudo service lightdm restart
