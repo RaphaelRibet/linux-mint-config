@@ -78,15 +78,14 @@ cd ~
 #sudo cp contrib/freedesktop/bspwm.desktop /usr/share/xsessions/
 #sudo service lightdm restart
 
-## I3
-sudo apt install i3 -y
+## RICING
+sudo apt install i3 polybar rofi
+
+## i3
 mkdir -p ~/.config/i3
 touch ~/.config/i3/config
 
-
-
-
-
+## Polybar
 
 
 
